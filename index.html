@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jineesha portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Java Full Stack Developer</p>
+            <h1>Hi, I'm <span>Jineesha</span><br>Chintala</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>An graduate student from University of Central Missouri (UCM) pursurig Computer Information Systems and Information Technology degree. Eager to learn new technologies and work on interesting challenges and projects.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Java based apps</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Intern at RR Info Tech as Sr. Full Stack Java developer.</li>
+                        <li><span>2019 - 2022</span><br>Sr.Software Engineer at Elevance health care.</li>
+                        <li><span>2017 - 2019</span><br>Application Developer at Bank of New York Mellon.</li>
+                        <li><span>2016 - 2017</span><br>Internship at Bank of New York Mellon.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>Masters from University of Central Missouri.</li>
+                        <li><span>2017</span><br>Bachelors of Computer Science from Anna University.</li>
+                        <li><span>2015</span><br>High School Graduate from Narayana college.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Development</h2>
+                <p> Building and maintaining functional and interactive websites using coding languages and frameworks.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Python</h2>
+                <p> Harnessing its versatility and simplicity to develop powerful and efficient software solutions, unleashing the potential of automation and data analysis for enhanced productivity and problem-solving.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>Java</h2>
+                <p>Utilizing its robustness and platform independence to build scalable and secure applications, enabling seamless integration with a wide range of technologies for diverse software development needs.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img class="work-images" src="images/work-1.jpeg">
+                <div class="layer">
+                    <h3>Travelers Bridge</h3>
+                    <p>Django based travelling website.</p>
+                    <a href="https://github.com/JineeshaChintala/TravelerBridge"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img class="work-images" src="images/work-2.jpg">
+                <div class="layer">
+                    <h3>Part IT</h3>
+                    <p>A Flutter project.</p>
+                    <a href="https://github.com/JineeshaChintala/Park-IT"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img class="work-images" src="images/work-3.jpg">
+                <div class="layer">
+                    <h3>Shark</h3>
+                    <p>A web app which lets the user track all of his work.</p>
+                    <a href="https://github.com/JineeshaChintala/shark-python-flask"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+       <!-- <a href="#" class="btn">See more</a> -->
+    </div>
+    <div class="container">
+                
+        <div class="work-list" style="display: none" id="more-projects">
+        <div class="work">
+            <img class="work-images" src="images/work-4.jpg">
+            <div class="layer">
+                <h3>Smart Vote</h3>
+                <p>A Voting website in which the user can create their own elections.</p>
+                <a href="https://github.com/JineeshaChintala/smart-vote" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img class="work-images" src="images/work-5.jpg">
+            <div class="layer">
+                <h3>To-Do Manager</h3>
+                <p>An online web application to create, update and manage your Todo list.</p>
+                <a href="https://github.com/JineeshaChintala/Todo-Manager"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>    
+        <div class="work">
+            <img class="work-images" src="images/work-6.jpg">
+            <div class="layer">
+                <h3>Registration Form</h3>
+                <p>A simple registration form which was my first project.</p>
+                <a href="https://github.com/JineeshaChintala/Regform"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div> 
+    <a onclick="seeMore()" class="btn">More projects</a>
+
+</div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> jineesha1606@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> (816) 859-8857</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="images/Jineesha_Chintala.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Jineesha.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+    var moreProjects = document.getElementById("more-projects");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+    function seeMore() {
+            if (moreProjects.style.display==="grid") { 
+                moreProjects.style.display = "none"; 
+            }
+            else { 
+                moreProjects.style.display="grid";
+            }
+        }
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
